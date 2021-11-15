@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Design to Code</title>
+  <link rel="stylesheet" href="ba26d75b224b48f74d903a7cf170a161.css">
+</head>
+<body>
+  <header data-app-region="drag">
+    <img src="c655150d06239c562735ee5f9bd5470a.png">
+    <div>
+      <h1>Design to Code</h1>
+      <h2>Export OutSystems UI CSS variables from your UI Kit</h2>
+    </div>
+  </header>
+  <div class="content">
+    <div class="alert" id="alert-message"></div>
+    <div class="main-content">
+
+      <!--
+      <div class="label-input">
+        <label>Primary Color</label>
+        <input type="color" value="" class="primary-color">
+      </div>
+      <div class="label-input">
+        <label>Secondary Color</label>
+        <input type="color" value="" class="secondary-color">
+      </div>
+      <div class="label-input">
+        <label>Color Background Body</label>
+        <input type="color" value="" class="color-background-body">
+      </div>
+      <div class="label-input">
+        <label>Header Color</label>
+        <input type="color" value="" class="header-color">
+      </div>
+      <div class="label-input">
+        <label>Header Size</label>
+        <input type="number" value="48" class="header-size">
+      </div>
+      -->
+      
+
+      <div class="grid-container">
+        <div class="grid-item"><label>Primary</label><div class="color"></div></div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+      </div>
+
+
+      <button class="button " id="button-send-data">Generate CSS From Sketch</button>
+      <div class="answer margin-top-base">
+        <div class="message-container" id="message-plugin"></div>
+        <div class="button copy-button" id="copy-button">Copy</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer data-app-region="drag">
+    Developed by Hi Interactive in association with OutSystems
+  </footer>
+
+  <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+  <script src="../resources_webview.js"></script>
+
+  
+
+</body>
+</html>

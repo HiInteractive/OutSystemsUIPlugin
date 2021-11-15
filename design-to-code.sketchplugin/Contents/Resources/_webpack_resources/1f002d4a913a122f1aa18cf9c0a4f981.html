@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Design to Code</title>
+  <link rel="stylesheet" href="0b0a6d9608017e4548b17db49b1623e8.css">
+</head>
+<body>
+  <header>
+    <img src="c655150d06239c562735ee5f9bd5470a.png">
+    <h1>Design to Code</h1>
+  </header>
+  <div class="content">
+    <div class="label-input">
+      <label>Primary Color</label>
+      <input type="color" value="" class="primary-color">
+    </div>
+    <div class="label-input">
+      <label>Secondary Color</label>
+      <input type="color" value="" class="secondary-color">
+    </div>
+    <div class="label-input">
+      <label>Color Background Body</label>
+      <input type="color" value="" class="color-background-body">
+    </div>
+    <div class="label-input">
+      <label>Header Color</label>
+      <input type="color" value="" class="header-color">
+    </div>
+    <div class="label-input">
+      <label>Header Size</label>
+      <input type="number" value="48" class="header-size">
+    </div>
+    <hr>
+    <button class="button margin-top-base" id="button-send-data">Get Data From Sketch</button>
+    <div class="answer margin-top-base" id="message-plugin"></div>
+
+  </div>
+
+  <footer>
+    Developed by Hi Interactive in association with OutSystems
+  </footer>
+
+  <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+  <script src="../resources_webview.js"></script>
+</body>
+</html>

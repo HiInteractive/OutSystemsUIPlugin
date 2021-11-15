@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Design to Code</title>
+  <link rel="stylesheet" href="cc1c3133213e1d2ef43983c35fed85b6.css">
+</head>
+<body>
+  <div class="content">
+
+    <h1>Design to Code</h1>
+
+    <div class="label-input">
+      <label>Primary Color</label>
+      <input type="color" value="" class="primary-color">
+    </div>
+    <div class="label-input">
+      <label>Secondary Color</label>
+      <input type="color" value="" class="secondary-color">
+    </div>
+    <div class="label-input">
+      <label>Color Background Body</label>
+      <input type="color" value="" class="color-background-body">
+    </div>
+    <div class="label-input">
+      <label>Header Color</label>
+      <input type="color" value="" class="header-color">
+    </div>
+    <div class="label-input">
+      <label>Header Size</label>
+      <input type="number" value="48" class="header-size">
+    </div>
+    <hr>
+    <button class="button margin-top-base" id="button-send-data">Get Data to Plugin</button>
+    <div class="answer margin-top-base" id="message-plugin"></div>
+
+  </div>
+  <div class="footer">Developed by Hi Interactive in association with OutSystems</div>
+
+  <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+  <script src="../resources_webview.js"></script>
+</body>
+</html>

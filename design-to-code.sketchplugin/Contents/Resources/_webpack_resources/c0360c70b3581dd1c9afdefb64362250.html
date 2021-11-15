@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Design to Code</title>
+  <link rel="stylesheet" href="88eb89d768fbbda0e71807dc7b19b758.css">
+  <link rel="stylesheet" href="c068ec26ffbf334297608e824295fa36.css">
+  <link rel="stylesheet" href="a227f005fa7ae066c1068ac4b963514c.css">
+</head>
+<body class="header-vertical">
+  <header data-app-region="drag">
+    <div class="header-logo">
+      <img src="bbdac0137cdc406e54ae04c6e66722b0.png">
+    </div>
+    
+    <div>
+      <h1>Design to Code</h1>
+      <h2>Version: 0.1.1</h2>
+    </div>
+  </header>
+  <div class="content">
+
+    <!-- Alert -->
+    <div class="alert" id="alert-message"></div>
+    
+    <div class="main-content">
+
+      <h5>About the Plugin</h5>
+
+      <h6 class="margin-top-base">How it works</h6>
+      <p class="margin-top-s">The plugin access the various elements in the Sketch document and retreaves the values that it needs to build the base CSS and to show all the styles from the UI, like: colors, typography, borders, spacing, styles and others.</p>
+      <p class="margin-top-s">It also generates a second CSS with all the CSS variables that you may need in your project.</p>
+
+      <h6 class="margin-top-base">Don'ts</h6>
+      <ul class="margin-top-s">
+        <li>Do not change the name of the elements in Sketch, the plugin uses them to retrieve data to the CSS generator and changing them may cause the plugin to stop working.</li>
+        <li>Do not delete the base OutSystems UI elements from the pages or from the artboards, the plugin needs them to get data to the CSS generator and deleting them may cause the plugin to stop working.</li>
+        <li>Do not change the order the elements are organized in the tree of the artboard under penalty of the plugin stops working.</li>
+        <li>Avoid change the structure of the base OutSystems UI components. Since the plugin is expecting a specific structure to build the CSS, when changed, it may stop working.</li>
+      </ul>
+
+      <h6 class="margin-top-base">Dos</h6>
+      <ul class="margin-top-s">
+        <li>Change the values of the base elements in the document (it will automatically update the CSS in the plugin).</li>
+        <li>Create new pages, artboards or elements.</li>
+        <li>Freely change or delete elements that were created by you.</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <footer data-app-region="drag">
+    Developed by Hi Interactive in association with OutSystems
+  </footer>
+
+  <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+  <script src="../resources_webview.js"></script>
+
+</body>
+</html>

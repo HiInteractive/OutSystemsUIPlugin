@@ -1,0 +1,46 @@
+/* some default styles to make the view more native like */
+
+html {
+  box-sizing: border-box;
+  background: #fff;
+  color: #000;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+  
+button {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	background-color: #F03;
+	border: none;
+	padding: 8px 20px;
+	font: inherit;
+	font-weight: bold;
+	color: #FFF;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+  .button:focus {
+	outline: none;
+}
+
+.  button:active {
+	padding-top: 9px;
+	padding-bottom: 7px;
+	box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.2);
+}

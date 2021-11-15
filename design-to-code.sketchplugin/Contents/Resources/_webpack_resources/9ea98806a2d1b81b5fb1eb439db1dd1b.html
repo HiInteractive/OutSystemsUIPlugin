@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Design to Code</title>
+  <link rel="stylesheet" href="2ba8d7194e8f08b0846f447a2bde9608.css">
+</head>
+<body>
+  <header data-app-region="drag">
+    <img src="c655150d06239c562735ee5f9bd5470a.png">
+    <div>
+      <h1>Design to Code</h1>
+      <h2>Export OutSystems UI CSS variables from your UI Kit</h2>
+    </div>
+  </header>
+  <div class="content">
+    <div class="alert" id="alert-message"></div>
+    <div class="main-content">
+
+      <div class="section-expandable">
+        <button class="section-expandable__title">
+          <div class="section-expandable__title-text">Título</div>
+          <div class="section-expandable__title-icon">(+)</div>
+        </div>
+        <div class="section-expandable__content">
+          Lorem ipsum dolor sit amet
+        </div>
+      </div>
+
+
+      <h3 class="margin-bottom-s">Theme colors</h3>
+      <div class="grid-container grid-3">
+        <div class="grid-item"><label>Primary</label><div class="color" id="preview-primary-color"></div></div>
+        <div class="grid-item"><label>Background</label><div class="color" id="preview-color-background-body"></div></div>
+        <div class="grid-item"><label>Header</label><div class="color" id="preview-header-color"></div></div>
+      </div>
+
+      <h3 class="margin-bottom-s">Typography</h3>
+      <div class="grid-container">
+        <div class="grid-item"><label>Font</label><div class="color" id="preview-font-family"></div></div>
+        <div class="grid-item" id="open-font-size-base"><label>Font size</label><div class="color" id="preview-font-size-base"></div></div>
+      </div>
+
+      <h3 class="margin-bottom-s">Structure - Spacing</h3>
+      <div class="grid-container grid-4">
+        <div class="grid-item"><label>None</label><div class="color" id="preview-space-none"></div></div>
+        <div class="grid-item"><label>XS</label><div class="color" id="preview-space-xs"></div></div>
+        <div class="grid-item"><label>S</label><div class="color" id="preview-space-s"></div></div>
+        <div class="grid-item"><label>Base</label><div class="color" id="preview-space-base"></div></div>
+        <div class="grid-item"><label>M</label><div class="color" id="preview-space-m"></div></div>
+        <div class="grid-item"><label>L</label><div class="color" id="preview-space-l"></div></div>
+        <div class="grid-item"><label>XL</label><div class="color" id="preview-space-xl"></div></div>
+        <div class="grid-item"><label>XXL</label><div class="color" id="preview-space-xxl"></div></div>
+      </div>
+
+      <h3 class="margin-bottom-s">Structure - Border</h3>
+      <div class="grid-container grid-4">
+        <div class="grid-item"><label>None</label><div class="color" id="preview-border-radius-none"></div></div>
+        <div class="grid-item"><label>Soft</label><div class="color" id="preview-border-radius-soft"></div></div>
+        <div class="grid-item"><label>Rounded</label><div class="color" id="preview-border-radius-rounded"></div></div>
+        <div class="grid-item"><label>Circle</label><div class="color" id="preview-border-radius-circle"></div></div>
+      </div>
+
+      <h3 class="margin-bottom-s">Structure - Header Size</h3>
+      <div class="grid-container grid-4">
+        <div class="grid-item"><label>Height</label><div class="color" id="preview-header-size"></div></div>
+      </div>
+
+
+
+      
+      <h3 class="margin-bottom-s">Semantic Pallete</h3>
+      <div class="grid-container grid-4">
+        <div class="grid-item"><label>Info</label><div class="color" id="preview-color-info"></div></div>
+        <div class="grid-item"><label>Success</label><div class="color" id="preview-color-success"></div></div>
+        <div class="grid-item"><label>Warning</label><div class="color" id="preview-color-warning"></div></div>
+        <div class="grid-item"><label>Error</label><div class="color" id="preview-color-error"></div></div>
+      </div>
+      <h3 class="margin-bottom-s">Neutral Pallete</h3>
+      <div class="grid-container grid-6">
+        <div class="grid-item"><label>0</label><div class="color" id="preview-color-neutral-0"></div></div>
+        <div class="grid-item"><label>1</label><div class="color" id="preview-color-neutral-1"></div></div>
+        <div class="grid-item"><label>2</label><div class="color" id="preview-color-neutral-2"></div></div>
+        <div class="grid-item"><label>3</label><div class="color" id="preview-color-neutral-3"></div></div>
+        <div class="grid-item"><label>4</label><div class="color" id="preview-color-neutral-4"></div></div>
+        <div class="grid-item"><label>5</label><div class="color" id="preview-color-neutral-5"></div></div>
+        <div class="grid-item"><label>6</label><div class="color" id="preview-color-neutral-6"></div></div>
+        <div class="grid-item"><label>7</label><div class="color" id="preview-color-neutral-7"></div></div>
+        <div class="grid-item"><label>8</label><div class="color" id="preview-color-neutral-8"></div></div>
+        <div class="grid-item"><label>9</label><div class="color" id="preview-color-neutral-9"></div></div>
+        <div class="grid-item"><label>10</label><div class="color" id="preview-color-neutral-10"></div></div>
+      </div>
+      <h3 class="margin-bottom-s">Exteded Pallete (Base Only)</h3>
+      <div class="grid-container grid-4">
+        <div class="grid-item"><label>Red</label><div class="color" id="preview-color-red"></div></div>
+        <div class="grid-item"><label>Orange</label><div class="color" id="preview-color-orange"></div></div>
+        <div class="grid-item"><label>Yellow</label><div class="color" id="preview-color-yellow"></div></div>
+        <div class="grid-item"><label>Lime</label><div class="color" id="preview-color-lime"></div></div>
+        <div class="grid-item"><label>Green</label><div class="color" id="preview-color-green"></div></div>
+        <div class="grid-item"><label>Teal</label><div class="color" id="preview-color-teal"></div></div>
+        <div class="grid-item"><label>Cyan</label><div class="color" id="preview-color-cyan"></div></div>
+        <div class="grid-item"><label>Blue</label><div class="color" id="preview-color-blue"></div></div>
+        <div class="grid-item"><label>Indigo</label><div class="color" id="preview-color-indigo"></div></div>
+        <div class="grid-item"><label>Violet</label><div class="color" id="preview-color-violet"></div></div>
+        <div class="grid-item"><label>Grape</label><div class="color" id="preview-color-grape"></div></div>
+        <div class="grid-item"><label>Pink</label><div class="color" id="preview-color-pink"></div></div>
+      </div>
+      
+      <button class="button margin-top-l" id="button-send-data">Generate CSS From Sketch</button>
+      <div class="answer margin-top-base">
+        <div class="message-container" id="message-plugin"></div>
+        <div class="button copy-button" id="copy-button">Copy</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer data-app-region="drag">
+    Developed by Hi Interactive in association with OutSystems
+  </footer>
+
+  <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+  <script src="../resources_webview.js"></script>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Design to Code</title>
+  <link rel="stylesheet" href="0a73025f8c163532900a2bf13157465d.css">
+</head>
+<body>
+  <header data-app-region="drag">
+    <img src="c655150d06239c562735ee5f9bd5470a.png">
+    <div>
+      <h1>Design to Code</h1>
+      <h2>Export OutSystems UI CSS variables from your UI Kit</h2>
+    </div>
+  </header>
+  <div class="content">
+    <div class="alert" id="alert-message"></div>
+    <div class="main-content">
+      <div class="label-input">
+        <label>Primary Color</label>
+        <input type="color" value="" class="primary-color">
+      </div>
+      <div class="label-input">
+        <label>Secondary Color</label>
+        <input type="color" value="" class="secondary-color">
+      </div>
+      <div class="label-input">
+        <label>Color Background Body</label>
+        <input type="color" value="" class="color-background-body">
+      </div>
+      <div class="label-input">
+        <label>Header Color</label>
+        <input type="color" value="" class="header-color">
+      </div>
+      <div class="label-input">
+        <label>Header Size</label>
+        <input type="number" value="48" class="header-size">
+      </div>
+
+      
+
+      <button class="button margin-top-base" id="button-send-data">Generate CSS From Sketch</button>
+      <div class="answer margin-top-base">
+        <div id="message-plugin">1234567890</div>
+        <div class="copy-button">Copy</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer data-app-region="drag">
+    Developed by Hi Interactive in association with OutSystems
+  </footer>
+
+  <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+  <script src="../resources_webview.js"></script>
+
+  <script>
+  
+  document.getElementsByClassName('copy-button')[0].addEventListener('click', () => {
+
+  
+var containerId = document.getElementById("message-plugin");
+
+if (document.selection) {
+  var range = document.body.createTextRange();
+  range.moveToElementText(document.getElementById(containerId));
+  range.select().createTextRange();
+  document.execCommand("copy");
+} else if (window.getSelection) {
+  var range = document.createRange();
+  range.selectNode(document.getElementById(containerId));
+  window.getSelection().addRange(range);
+  document.execCommand("copy");
+  alert("Text has been copied, now paste in the text-area")
+}
+
+});
+  
+  </script>
+
+</body>
+</html>

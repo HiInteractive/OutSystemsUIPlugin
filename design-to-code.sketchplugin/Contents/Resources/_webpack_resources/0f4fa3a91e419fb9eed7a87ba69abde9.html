@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Design to Code</title>
+  <link rel="stylesheet" href="389d2f549a36c80be9c5d16338cbc1df.css">
+</head>
+<body>
+  <h1>Design to Code</h1>
+
+  <div class="label-input">
+    <label>Primary Color</label>
+    <input type="color" value="" class="primary-color">
+  </div>
+  <div class="label-input">
+    <label>Secondary Color</label>
+    <input type="color" value="" class="secondary-color">
+  </div>
+  <div class="label-input">
+    <label>Color Background Body</label>
+    <input type="color" value="" class="color-background-body">
+  </div>
+  <div class="label-input">
+    <label>Header Color</label>
+    <input type="color" value="" class="header-color">
+  </div>
+  <div class="label-input">
+    <label>Header Size</label>
+    <input type="number" value="48" class="header-size">
+  </div>
+  <button class="button margin-top-base" id="button-send-data">Send Data to Plugin</button>
+  
+  <div class="answer margin-top-base" id="message-plugin"></div>
+
+  <!--
+  <hr>
+  <div>
+    <button class="button button-random" id="button-random">Get a random number</button>
+  </div>
+  <div class="answer" id="random-number"></div>
+  -->
+  
+
+  <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+  <script src="../resources_webview.js"></script>
+</body>
+</html>

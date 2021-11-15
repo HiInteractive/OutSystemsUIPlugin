@@ -1,0 +1,155 @@
+/* some default styles to make the view more native like */
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  background: #eee;
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.content {
+  padding: 16px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+input {
+  height: 40px;
+  width: 80px;
+}
+
+input[type=number] {
+  padding: 0 16px;
+}
+
+.label-input {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.label-input + .label-input {
+  margin-top: 8px;
+}
+
+.label-input label {
+  display: inline-block;
+  width: 220px;
+}
+
+.answer {
+  margin-top: 16px;
+  background-color: bisque;
+  padding: 16px;
+  border: 1px dashed #333;
+}
+  
+button {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	background-color: #F03;
+	border: none;
+	padding: 8px 20px;
+	font: inherit;
+	font-weight: bold;
+	color: #FFF;
+	border-radius: 20px;
+	cursor: pointer;
+  height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button:active {
+	padding-top: 9px;
+	padding-bottom: 7px;
+	box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+  margin: 24px 0;
+  border: 1px solid #ccc;
+}
+
+.margin-top-base {
+  margin-top: 16px;
+}
+
+.margin-bottom-base {
+  margin-bottom: 16px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header h1 {
+  flex: 1;
+  color: #ccc;
+}
+
+header img {
+  height: 40px;
+  animation: pulse-black 6s infinite;
+  border-radius: 50%;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 16px;
+}
+
+@keyframes pulse-black {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 51, 0.5);
+  }
+  30% {
+    box-shadow: 0 0 0 10px rgba(255, 0, 51, 0);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "OutSystems UI Plugin",
+  "description": "Sketch plugin to change OS UI library and export to css.",
+  "author": "Hi Interactive",
+  "homepage": "https://outsystemsui.outsystems.com/OutsystemsUiWebsite/ResourcesPage",
+  "version": "0.1.5",
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "logo.png",
+  "scope": "application",
+  "commands": [
+    {
+      "name": "Learn more about OutSystems UI",
+      "handler": "outsystemsui",
+      "identifier": "about-outsystemsui-identifier",
+      "script": "__sketch-commands.js",
+      "scope": "application"
+    },
+    {
+      "name": "About",
+      "handler": "about",
+      "identifier": "about-identifier",
+      "script": "__sketch-commands.js",
+      "scope": "application"
+    },
+    {
+      "name": "Start Plugin",
+      "identifier": "start-plugin-identifier",
+      "script": "__sketch-commands.js",
+      "scope": "application",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "Shutdown": "onShutdown"
+        }
+      }
+    },
+    {
+      "identifier": "on-document-change",
+      "script": "__sketch-commands.js",
+      "handlers": {
+        "onDocumentChanged": "onDocumentChanged"
+      }
+    },
+    {
+      "identifier": "on-rename-layer",
+      "script": "__sketch-commands.js",
+      "handlers": {
+        "RenameLayer": "onRenameLayer"
+      }
+    }
+  ],
+  "menu": {
+    "title": "OutSystems UI Plugin",
+    "items": [
+      "start-plugin-identifier",
+      "about-outsystemsui-identifier",
+      "download-outsystemsui-uikit-sketch-identifier",
+      "about-identifier"
+    ]
+  },
+  "identifier": "outsystems-ui-plugin",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}
