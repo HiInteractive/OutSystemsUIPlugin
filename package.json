@@ -13,6 +13,10 @@
     ],
     "sketch-assets-file": "sketch-assets/icons.sketch"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiInteractive/OutSystemsUIPlugin"
+  },
   "scripts": {
     "build": "skpm-build",
     "watch": "skpm-build --watch",
