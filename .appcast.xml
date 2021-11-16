@@ -4,5 +4,8 @@
     <item>
       <enclosure url="https://github.com/HiInteractive/OutSystemsUIPlugin/releases/download/v0.1.5/outsystems-ui-plugin.sketchplugin.zip" sparkle:version="0.1.5"/>
     </item>
+    <item>
+      <enclosure url="https://github.com/HiInteractive/OutSystemsUIPlugin/releases/download/v0.1.5/outsystems-ui-plugin.sketchplugin.zip" sparkle:version="0.1.5"/>
+    </item>
   </channel>
 </rss>
