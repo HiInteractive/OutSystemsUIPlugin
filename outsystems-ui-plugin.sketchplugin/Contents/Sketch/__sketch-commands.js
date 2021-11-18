@@ -2684,7 +2684,7 @@ module.exports.sendToWebview = function sendToWebview(identifier, evalString) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "file://" + String(context.scriptPath).split(".sketchplugin/Contents/Sketch")[0] + ".sketchplugin/Contents/Resources/_webpack_resources/97fa5ed8016032bcbaf459566f287ba9.html";
+module.exports = "file://" + String(context.scriptPath).split(".sketchplugin/Contents/Sketch")[0] + ".sketchplugin/Contents/Resources/_webpack_resources/98c7d91a43b60eaff97f6bd3eb951490.html";
 
 /***/ }),
 
@@ -2695,7 +2695,7 @@ module.exports = "file://" + String(context.scriptPath).split(".sketchplugin/Con
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "file://" + String(context.scriptPath).split(".sketchplugin/Contents/Sketch")[0] + ".sketchplugin/Contents/Resources/_webpack_resources/8e787b94e695111fe2cdd93ea2ee8be1.html";
+module.exports = "file://" + String(context.scriptPath).split(".sketchplugin/Contents/Sketch")[0] + ".sketchplugin/Contents/Resources/_webpack_resources/c2ae9c222a26da8a579d02abb69c0ed7.html";
 
 /***/ }),
 

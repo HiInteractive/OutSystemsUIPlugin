@@ -145,7 +145,7 @@ $3 - Structure
 
 @font-face {
   font-family: sfprotext-regular;
-  src: url(./SFProText-Regular.ttf);
+  src: url(85bd46c1cff02c1d8360cc714b8298fa.ttf);
 }
 
 html, body {
@@ -678,7 +678,6 @@ $13 - Dark Theme
 .__skpm-dark .section-expandable .section-expandable__title:hover {
   background-color: var(--color-neutral-7);
 }
-
 
 .__skpm-dark footer {
   color: var(--color-neutral-5);
