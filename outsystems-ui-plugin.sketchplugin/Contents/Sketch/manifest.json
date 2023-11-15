@@ -1,9 +1,9 @@
 {
   "name": "OutSystems UI Plugin",
-  "description": "Sketch plugin to change OS UI library and export to css.",
+  "description": "Sketch plugin to change OS UI library and export to css. Not supported by OutSystems",
   "author": "Hi Interactive",
   "homepage": "https://outsystemsui.outsystems.com/OutsystemsUiWebsite/ResourcesPage",
-  "version": "0.1.5",
+  "version": "1.0.3",
   "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
   "icon": "logo.png",
   "scope": "application",
